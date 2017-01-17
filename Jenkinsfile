@@ -3,7 +3,7 @@ node {
     stage('Build'){
         echo "Building Maven Project"
         echo "Building Stage"
-        checkout scm 
+        /* checkout scm  */ 
         sh 'mvn -f Pipeline-Demo/pom.xml clean install'
     }
     stage('Test'){
