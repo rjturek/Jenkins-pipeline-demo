@@ -1,12 +1,12 @@
 node {
 
-    stage('Build){
+    stage('Build'){
         echo "Building Maven Project"
         echo "Building Stage"
         checkout scm 
         sh 'mvn -f Pipeline-Demo/pom.xml clean install'
     }
-    stage('Test){
+    stage('Test'){
         echo "Testing Stage"
     }
     stage('Deploy'){
