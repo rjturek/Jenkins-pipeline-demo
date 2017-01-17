@@ -1,3 +1,4 @@
 node {
-    echo "Hello World!"
+    echo "Building Maven Project"
+    sh 'mvn -f Pipeline-Demo/pom.xml clean install'
 }
